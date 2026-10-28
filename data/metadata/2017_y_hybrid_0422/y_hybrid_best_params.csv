@@ -1,0 +1,6 @@
+fd_id,lambda,beta,gamma,fd4_mode,fd5_mode,train_fd_WAPE
+1,0.2,0,1.5,hybrid,baseline_only,0.752847789983482
+2,0.2,0,1.5,hybrid,baseline_only,0.727976479560406
+3,0,0,1.5,hybrid,baseline_only,0.802618857347967
+4,0,0.5,0.5,hybrid,baseline_only,0.723546858430504
+5,1,0.5,0.5,hybrid,baseline_only,NaN

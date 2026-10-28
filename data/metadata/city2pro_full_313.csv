@@ -1,0 +1,314 @@
+city_id,city_en,city_cn,province_id,province_en,province_name_std,province_code,city_code,code_source
+1,Beijing,北京,1,Beijing,北京市,110000,110000,existing_codebook
+2,Tianjin,天津,2,Tianjin,天津市,120000,120000,existing_codebook
+3,Shijiazhuang,石家庄,3,Hebei,河北省,130000,130100,existing_codebook
+4,Tangshan,唐山,3,Hebei,河北省,130000,130200,existing_codebook
+5,Qinhuangdao,秦皇岛,3,Hebei,河北省,130000,130300,existing_codebook
+6,Handan,邯郸,3,Hebei,河北省,130000,130400,existing_codebook
+7,Xingtai,邢台,3,Hebei,河北省,130000,130500,existing_codebook
+8,Baoding,保定,3,Hebei,河北省,130000,130600,existing_codebook
+9,Zhangjiakou,张家口,3,Hebei,河北省,130000,130700,existing_codebook
+10,Chengde,承德,3,Hebei,河北省,130000,130800,existing_codebook
+11,Cangzhou,沧州,3,Hebei,河北省,130000,130900,existing_codebook
+12,Langfang,廊坊,3,Hebei,河北省,130000,131000,existing_codebook
+13,Hengshui,衡水,3,Hebei,河北省,130000,131100,existing_codebook
+14,Taiyuan,太原,4,Shanxi,山西省,140000,140100,existing_codebook
+15,Datong,大同,4,Shanxi,山西省,140000,140200,existing_codebook
+16,Yangquan,阳泉,4,Shanxi,山西省,140000,140300,existing_codebook
+17,Changzhi,长治,4,Shanxi,山西省,140000,140400,existing_codebook
+18,Jincheng,晋城,4,Shanxi,山西省,140000,140500,existing_codebook
+19,Shuozhou,朔州,4,Shanxi,山西省,140000,140600,existing_codebook
+20,Jinzhong,晋中,4,Shanxi,山西省,140000,140700,existing_codebook
+21,Yuncheng,运城,4,Shanxi,山西省,140000,140800,existing_codebook
+22,Xinzhou,忻州,4,Shanxi,山西省,140000,140900,existing_codebook
+23,Linfen,临汾,4,Shanxi,山西省,140000,141000,existing_codebook
+24,Luliang,吕梁,4,Shanxi,山西省,140000,141100,existing_codebook
+25,Hohhot,呼和浩特,5,Inner Mongolia,内蒙古自治区,150000,150100,existing_codebook
+26,Baotou,包头,5,Inner Mongolia,内蒙古自治区,150000,150200,existing_codebook
+27,Hulunbuir,呼伦贝尔,5,Inner Mongolia,内蒙古自治区,150000,150700,existing_codebook
+28,Xing'an,兴安盟,5,Inner Mongolia,内蒙古自治区,150000,152200,manual_supplement
+29,Tongliao,通辽,5,Inner Mongolia,内蒙古自治区,150000,150500,existing_codebook
+30,Chifeng,赤峰,5,Inner Mongolia,内蒙古自治区,150000,150400,existing_codebook
+31,Xilin Gol,锡林郭勒,5,Inner Mongolia,内蒙古自治区,150000,152500,manual_supplement
+32,Ulaan Chab,乌兰察布,5,Inner Mongolia,内蒙古自治区,150000,150900,existing_codebook
+33,Ordos,鄂尔多斯,5,Inner Mongolia,内蒙古自治区,150000,150600,existing_codebook
+34,Baynnur,巴彦淖尔,5,Inner Mongolia,内蒙古自治区,150000,150800,existing_codebook
+35,Wuhai,乌海,5,Inner Mongolia,内蒙古自治区,150000,150300,existing_codebook
+36,Alxa,阿拉善盟,5,Inner Mongolia,内蒙古自治区,150000,152900,manual_supplement
+37,Shenyang,沈阳,6,Liaoning,辽宁省,210000,210100,existing_codebook
+38,Dalian,大连,6,Liaoning,辽宁省,210000,210200,existing_codebook
+39,Anshan,鞍山,6,Liaoning,辽宁省,210000,210300,existing_codebook
+40,Fushun,抚顺,6,Liaoning,辽宁省,210000,210400,existing_codebook
+41,Benxi,本溪,6,Liaoning,辽宁省,210000,210500,existing_codebook
+42,Dandong,丹东,6,Liaoning,辽宁省,210000,210600,existing_codebook
+43,Fuxin,阜新,6,Liaoning,辽宁省,210000,210900,existing_codebook
+44,Liaoyang,辽阳,6,Liaoning,辽宁省,210000,211000,existing_codebook
+45,Panjin,盘锦,6,Liaoning,辽宁省,210000,211100,existing_codebook
+46,Tieling,铁岭,6,Liaoning,辽宁省,210000,211200,existing_codebook
+47,Chaoyang,朝阳,6,Liaoning,辽宁省,210000,211300,existing_codebook
+48,Huludao,葫芦岛,6,Liaoning,辽宁省,210000,211400,existing_codebook
+49,Jinzhou,锦州,6,Liaoning,辽宁省,210000,210700,existing_codebook
+50,Yingkou,营口,6,Liaoning,辽宁省,210000,210800,existing_codebook
+51,Changchun,长春,7,Jilin,吉林省,220000,220100,existing_codebook
+52,Jilin,吉林,7,Jilin,吉林省,220000,220200,existing_codebook
+53,Siping,四平,7,Jilin,吉林省,220000,220300,existing_codebook
+54,Liaoyuan,辽源,7,Jilin,吉林省,220000,220400,existing_codebook
+55,Tonghua,通化,7,Jilin,吉林省,220000,220500,existing_codebook
+56,Baishan,白山,7,Jilin,吉林省,220000,220600,existing_codebook
+57,Songyuan,松原,7,Jilin,吉林省,220000,220700,existing_codebook
+58,Baicheng,白城,7,Jilin,吉林省,220000,220800,existing_codebook
+59,Yanbian Korean,延边,7,Jilin,吉林省,220000,222400,manual_supplement
+60,Harbin,哈尔滨,8,Heilongjiang,黑龙江省,230000,230100,existing_codebook
+61,Qiqihar,齐齐哈尔,8,Heilongjiang,黑龙江省,230000,230200,existing_codebook
+62,Jixi,鸡西,8,Heilongjiang,黑龙江省,230000,230300,existing_codebook
+63,Hegang,鹤岗,8,Heilongjiang,黑龙江省,230000,230400,existing_codebook
+64,Shuangyashan,双鸭山,8,Heilongjiang,黑龙江省,230000,230500,existing_codebook
+65,Daqing,大庆,8,Heilongjiang,黑龙江省,230000,230600,existing_codebook
+66,Yiichun,伊春,8,Heilongjiang,黑龙江省,230000,230700,existing_codebook
+67,Jiamusi,佳木斯,8,Heilongjiang,黑龙江省,230000,230800,existing_codebook
+68,Qitaihe,七台河,8,Heilongjiang,黑龙江省,230000,230900,existing_codebook
+69,Mudanjiang,牡丹江,8,Heilongjiang,黑龙江省,230000,231000,existing_codebook
+70,Heihe,黑河,8,Heilongjiang,黑龙江省,230000,231100,existing_codebook
+71,Suihua,绥化,8,Heilongjiang,黑龙江省,230000,231200,existing_codebook
+72,Daxing'anling,大兴安岭,8,Heilongjiang,黑龙江省,230000,232700,manual_supplement
+73,Shanghai,上海,9,Shanghai,上海市,310000,310000,existing_codebook
+74,Nanjing,南京,10,Jiangsu,江苏省,320000,320100,existing_codebook
+75,Wuxi,无锡,10,Jiangsu,江苏省,320000,320200,existing_codebook
+76,Xuzhou,徐州,10,Jiangsu,江苏省,320000,320300,existing_codebook
+77,Changzhou,常州,10,Jiangsu,江苏省,320000,320400,existing_codebook
+78,Suzhou,苏州,10,Jiangsu,江苏省,320000,320500,existing_codebook
+79,Nantong,南通,10,Jiangsu,江苏省,320000,320600,existing_codebook
+80,Lianyungang,连云港,10,Jiangsu,江苏省,320000,320700,existing_codebook
+81,Huai'an,淮安,10,Jiangsu,江苏省,320000,320800,existing_codebook
+82,Yancheng,盐城,10,Jiangsu,江苏省,320000,320900,existing_codebook
+83,Yangzhou,扬州,10,Jiangsu,江苏省,320000,321000,existing_codebook
+84,Zhenjiang,镇江,10,Jiangsu,江苏省,320000,321100,existing_codebook
+85,Taizhou,泰州,10,Jiangsu,江苏省,320000,321200,existing_codebook
+86,Suqian,宿迁,10,Jiangsu,江苏省,320000,321300,existing_codebook
+87,Hangzhou,杭州,11,Zhejiang,浙江省,330000,330100,existing_codebook
+88,Ningbo,宁波,11,Zhejiang,浙江省,330000,330200,existing_codebook
+89,Jiaxing,嘉兴,11,Zhejiang,浙江省,330000,330400,existing_codebook
+90,Huzhou,湖州,11,Zhejiang,浙江省,330000,330500,existing_codebook
+91,Shaoxing,绍兴,11,Zhejiang,浙江省,330000,330600,existing_codebook
+92,Jinhua,金华,11,Zhejiang,浙江省,330000,330700,existing_codebook
+93,Quzhou,衢州,11,Zhejiang,浙江省,330000,330800,existing_codebook
+94,Zhoushan,舟山,11,Zhejiang,浙江省,330000,330900,existing_codebook
+95,Taiizhou,台州,11,Zhejiang,浙江省,330000,331000,existing_codebook
+96,Lishui,丽水,11,Zhejiang,浙江省,330000,331100,existing_codebook
+97,Wenzhou,温州,11,Zhejiang,浙江省,330000,330300,existing_codebook
+98,Hefei,合肥,12,Anhui,安徽省,340000,340100,existing_codebook
+99,Wuhu,芜湖,12,Anhui,安徽省,340000,340200,existing_codebook
+100,Bengbu,蚌埠,12,Anhui,安徽省,340000,340300,existing_codebook
+101,Huainan,淮南,12,Anhui,安徽省,340000,340400,existing_codebook
+102,Ma'anshan,马鞍山,12,Anhui,安徽省,340000,340500,existing_codebook
+103,Huaibei,淮北,12,Anhui,安徽省,340000,340600,existing_codebook
+104,Tongling,铜陵,12,Anhui,安徽省,340000,340700,existing_codebook
+105,Anqing,安庆,12,Anhui,安徽省,340000,340800,existing_codebook
+106,Huangshan,黄山,12,Anhui,安徽省,340000,341000,existing_codebook
+107,Chuzhou,滁州,12,Anhui,安徽省,340000,341100,existing_codebook
+108,Fuyang,阜阳,12,Anhui,安徽省,340000,341200,existing_codebook
+109,Suuzhou,宿州,12,Anhui,安徽省,340000,341300,existing_codebook
+110,Lu'an,六安,12,Anhui,安徽省,340000,341500,existing_codebook
+111,Bozhou,亳州,12,Anhui,安徽省,340000,341600,existing_codebook
+112,Chizhou,池州,12,Anhui,安徽省,340000,341700,existing_codebook
+113,Xuancheng,宣城,12,Anhui,安徽省,340000,341800,existing_codebook
+114,Fuzhou,福州,13,Fujian,福建省,350000,350100,existing_codebook
+115,Xiamen,厦门,13,Fujian,福建省,350000,350200,existing_codebook
+116,Sanming,三明,13,Fujian,福建省,350000,350400,existing_codebook
+117,Quanzhou,泉州,13,Fujian,福建省,350000,350500,existing_codebook
+118,Zhangzhou,漳州,13,Fujian,福建省,350000,350600,existing_codebook
+119,Nanping,南平,13,Fujian,福建省,350000,350700,existing_codebook
+120,Longyan,龙岩,13,Fujian,福建省,350000,350800,existing_codebook
+121,Putian,莆田,13,Fujian,福建省,350000,350300,existing_codebook
+122,Ningde,宁德,13,Fujian,福建省,350000,350900,existing_codebook
+123,Nanchang,南昌,14,Jiangxi,江西省,360000,360100,existing_codebook
+124,Jingdezhen,景德镇,14,Jiangxi,江西省,360000,360200,existing_codebook
+125,Pingxiang,萍乡,14,Jiangxi,江西省,360000,360300,existing_codebook
+126,Jiujiang,九江,14,Jiangxi,江西省,360000,360400,existing_codebook
+127,Xinyu,新余,14,Jiangxi,江西省,360000,360500,existing_codebook
+128,Yingtan,鹰潭,14,Jiangxi,江西省,360000,360600,existing_codebook
+129,Ganzhou,赣州,14,Jiangxi,江西省,360000,360700,existing_codebook
+130,Ji'an,吉安,14,Jiangxi,江西省,360000,360800,existing_codebook
+131,Yichun,宜春,14,Jiangxi,江西省,360000,360900,existing_codebook
+132,Fuuzhou,抚州,14,Jiangxi,江西省,360000,361000,existing_codebook
+133,Shangrao,上饶,14,Jiangxi,江西省,360000,361100,existing_codebook
+134,Jinan,济南,15,Shandong,山东省,370000,370100,existing_codebook
+135,Qingdao,青岛,15,Shandong,山东省,370000,370200,existing_codebook
+136,Zibo,淄博,15,Shandong,山东省,370000,370300,existing_codebook
+137,Zaozhuang,枣庄,15,Shandong,山东省,370000,370400,existing_codebook
+138,Dongying,东营,15,Shandong,山东省,370000,370500,existing_codebook
+139,Yantai,烟台,15,Shandong,山东省,370000,370600,existing_codebook
+140,Jining,济宁,15,Shandong,山东省,370000,370800,existing_codebook
+141,Tai'an,泰安,15,Shandong,山东省,370000,370900,existing_codebook
+142,Weihai,威海,15,Shandong,山东省,370000,371000,existing_codebook
+143,Rizhao,日照,15,Shandong,山东省,370000,371100,existing_codebook
+144,Laiwu,莱芜,15,Shandong,山东省,370000,371200,manual_supplement
+145,Linyi,临沂,15,Shandong,山东省,370000,371300,existing_codebook
+146,Dezhou,德州,15,Shandong,山东省,370000,371400,existing_codebook
+147,Binzhou,滨州,15,Shandong,山东省,370000,371600,existing_codebook
+148,Heze,菏泽,15,Shandong,山东省,370000,371700,existing_codebook
+149,Weifang,潍坊,15,Shandong,山东省,370000,370700,existing_codebook
+150,Liaocheng,聊城,15,Shandong,山东省,370000,371500,existing_codebook
+151,Zhengzhou,郑州,16,Henan,河南省,410000,410100,existing_codebook
+152,Kaifeng,开封,16,Henan,河南省,410000,410200,existing_codebook
+153,Luoyang,洛阳,16,Henan,河南省,410000,410300,existing_codebook
+154,Pingdingshan,平顶山,16,Henan,河南省,410000,410400,existing_codebook
+155,Anyang,安阳,16,Henan,河南省,410000,410500,existing_codebook
+156,Hebi,鹤壁,16,Henan,河南省,410000,410600,existing_codebook
+157,Xinxiang,新乡,16,Henan,河南省,410000,410700,existing_codebook
+158,Jiaozuo,焦作,16,Henan,河南省,410000,410800,existing_codebook
+159,Puyang,濮阳,16,Henan,河南省,410000,410900,existing_codebook
+160,Luohe,漯河,16,Henan,河南省,410000,411100,existing_codebook
+161,Sanmenxia,三门峡,16,Henan,河南省,410000,411200,existing_codebook
+162,Nanyang,南阳,16,Henan,河南省,410000,411300,existing_codebook
+163,Shangqiu,商丘,16,Henan,河南省,410000,411400,existing_codebook
+164,Xinyang,信阳,16,Henan,河南省,410000,411500,existing_codebook
+165,Zhumadian,驻马店,16,Henan,河南省,410000,411700,existing_codebook
+166,Jiyuan shi,济源,16,Henan,河南省,410000,419001,manual_supplement
+167,Xuchang,许昌,16,Henan,河南省,410000,411000,existing_codebook
+168,Zhoukou,周口,16,Henan,河南省,410000,411600,existing_codebook
+169,Wuhan,武汉,17,Hubei,湖北省,420000,420100,existing_codebook
+170,Huangshi,黄石,17,Hubei,湖北省,420000,420200,existing_codebook
+171,Shiyan,十堰,17,Hubei,湖北省,420000,420300,existing_codebook
+172,Yichang,宜昌,17,Hubei,湖北省,420000,420500,existing_codebook
+173,Xiangfan,襄阳,17,Hubei,湖北省,420000,420600,existing_codebook
+174,Ezhou,鄂州,17,Hubei,湖北省,420000,420700,existing_codebook
+175,Jingmen,荆门,17,Hubei,湖北省,420000,420800,existing_codebook
+176,Huanggang,黄冈,17,Hubei,湖北省,420000,421100,existing_codebook
+177,Xianning,咸宁,17,Hubei,湖北省,420000,421200,existing_codebook
+178,Suizhou Shi,随州,17,Hubei,湖北省,420000,421300,existing_codebook
+179,Enshi Tujia and Miao,恩施州,17,Hubei,湖北省,420000,422800,manual_supplement
+180,Xiantao,仙桃,17,Hubei,湖北省,420000,429004,manual_supplement
+181,Xiaogan,孝感,17,Hubei,湖北省,420000,420900,existing_codebook
+182,Jingzhou,荆州,17,Hubei,湖北省,420000,421000,existing_codebook
+183,Shennongjia,神农架地区,17,Hubei,湖北省,420000,429021,manual_supplement
+184,Tianmen,天门,17,Hubei,湖北省,420000,429006,manual_supplement
+185,Qianjiang,潜江,17,Hubei,湖北省,420000,429005,manual_supplement
+186,Changsha,长沙,18,Hunan,湖南省,430000,430100,existing_codebook
+187,Zhuzhou,株洲,18,Hunan,湖南省,430000,430200,existing_codebook
+188,Xiangtan,湘潭,18,Hunan,湖南省,430000,430300,existing_codebook
+189,Hengyang,衡阳,18,Hunan,湖南省,430000,430400,existing_codebook
+190,Yueyang,岳阳,18,Hunan,湖南省,430000,430600,existing_codebook
+191,Changde,常德,18,Hunan,湖南省,430000,430700,existing_codebook
+192,Yiyang,益阳,18,Hunan,湖南省,430000,430900,existing_codebook
+193,Chenzhou,郴州,18,Hunan,湖南省,430000,431000,existing_codebook
+194,Yongzhou,永州,18,Hunan,湖南省,430000,431100,existing_codebook
+195,Huaihua,怀化,18,Hunan,湖南省,430000,431200,existing_codebook
+196,Xiangxi Tujia and Miao,湘西,18,Hunan,湖南省,430000,433100,manual_supplement
+197,Loudi,娄底,18,Hunan,湖南省,430000,431300,existing_codebook
+198,Zhangjiajie,张家界,18,Hunan,湖南省,430000,430800,existing_codebook
+199,Shaoyang,邵阳,18,Hunan,湖南省,430000,430500,existing_codebook
+200,Guangzhou,广州,19,Guangdong,广东省,440000,440100,existing_codebook
+201,Shaoguan,韶关,19,Guangdong,广东省,440000,440200,existing_codebook
+202,Shenzhen,深圳,19,Guangdong,广东省,440000,440300,existing_codebook
+203,Zhuhai,珠海,19,Guangdong,广东省,440000,440400,existing_codebook
+204,Shantou,汕头,19,Guangdong,广东省,440000,440500,existing_codebook
+205,Foshan,佛山,19,Guangdong,广东省,440000,440600,existing_codebook
+206,Jiangmen,江门,19,Guangdong,广东省,440000,440700,existing_codebook
+207,Zhanjiang,湛江,19,Guangdong,广东省,440000,440800,existing_codebook
+208,Zhaoqing,肇庆,19,Guangdong,广东省,440000,441200,existing_codebook
+209,Huizhou,惠州,19,Guangdong,广东省,440000,441300,existing_codebook
+210,Meizhou,梅州,19,Guangdong,广东省,440000,441400,existing_codebook
+211,Shanwei,汕尾,19,Guangdong,广东省,440000,441500,existing_codebook
+212,Heyuan,河源,19,Guangdong,广东省,440000,441600,existing_codebook
+213,Yangjiang,阳江,19,Guangdong,广东省,440000,441700,existing_codebook
+214,Qingyuan,清远,19,Guangdong,广东省,440000,441800,existing_codebook
+215,Dongguan,东莞,19,Guangdong,广东省,440000,441900,existing_codebook
+216,Zhongshan,中山,19,Guangdong,广东省,440000,442000,existing_codebook
+217,Chaozhou,潮州,19,Guangdong,广东省,440000,445100,existing_codebook
+218,Jieyang,揭阳,19,Guangdong,广东省,440000,445200,existing_codebook
+219,Yunfu,云浮,19,Guangdong,广东省,440000,445300,existing_codebook
+220,Maoming,茂名,19,Guangdong,广东省,440000,440900,existing_codebook
+221,Nanning,南宁,20,Guangxi,广西壮族自治区,450000,450100,existing_codebook
+222,Liuzhou,柳州,20,Guangxi,广西壮族自治区,450000,450200,existing_codebook
+223,Guilin,桂林,20,Guangxi,广西壮族自治区,450000,450300,existing_codebook
+224,Wuzhou,梧州,20,Guangxi,广西壮族自治区,450000,450400,existing_codebook
+225,Fangchenggang,防城港,20,Guangxi,广西壮族自治区,450000,450600,existing_codebook
+226,Qinzhou,钦州,20,Guangxi,广西壮族自治区,450000,450700,existing_codebook
+227,Guigang,贵港,20,Guangxi,广西壮族自治区,450000,450800,existing_codebook
+228,Yuulin,玉林,20,Guangxi,广西壮族自治区,450000,450900,existing_codebook
+229,Baise,百色,20,Guangxi,广西壮族自治区,450000,451000,existing_codebook
+230,Hezhou,贺州,20,Guangxi,广西壮族自治区,450000,451100,existing_codebook
+231,Hechi,河池,20,Guangxi,广西壮族自治区,450000,451200,existing_codebook
+232,Laibin,来宾,20,Guangxi,广西壮族自治区,450000,451300,existing_codebook
+233,Chongzuo,崇左,20,Guangxi,广西壮族自治区,450000,451400,existing_codebook
+234,Beihai,北海,20,Guangxi,广西壮族自治区,450000,450500,existing_codebook
+235,Hainan Tibetan,海南,21,Hainan,海南省,460000,460000,manual_supplement
+236,Chongqing,重庆,22,Chongqing,重庆市,500000,500000,existing_codebook
+237,Chengdu,成都,23,Sichuan,四川省,510000,510100,existing_codebook
+238,Zigong,自贡,23,Sichuan,四川省,510000,510300,existing_codebook
+239,Panzhihua,攀枝花,23,Sichuan,四川省,510000,510400,existing_codebook
+240,Luzhou,泸州,23,Sichuan,四川省,510000,510500,existing_codebook
+241,Deyang,德阳,23,Sichuan,四川省,510000,510600,existing_codebook
+242,Mianyang,绵阳,23,Sichuan,四川省,510000,510700,existing_codebook
+243,Guangyuan,广元,23,Sichuan,四川省,510000,510800,existing_codebook
+244,Suining,遂宁,23,Sichuan,四川省,510000,510900,existing_codebook
+245,Neijiang]],内江,23,Sichuan,四川省,510000,511000,existing_codebook
+246,Leshan,乐山,23,Sichuan,四川省,510000,511100,existing_codebook
+247,Nanchong,南充,23,Sichuan,四川省,510000,511300,existing_codebook
+248,Meishan,眉山,23,Sichuan,四川省,510000,511400,existing_codebook
+249,Guang'an,广安,23,Sichuan,四川省,510000,511600,existing_codebook
+250,Ya'an,雅安,23,Sichuan,四川省,510000,511800,existing_codebook
+251,Ziyang,资阳,23,Sichuan,四川省,510000,512000,existing_codebook
+252,Garzê Tibetan,甘孜,23,Sichuan,四川省,510000,513300,manual_supplement
+253,Yibin,宜宾,23,Sichuan,四川省,510000,511500,existing_codebook
+254,Dazhou,达州,23,Sichuan,四川省,510000,511700,existing_codebook
+255,Bazhong,巴中,23,Sichuan,四川省,510000,511900,existing_codebook
+256,Ngawa,阿坝,23,Sichuan,四川省,510000,513200,manual_supplement
+257,Liangshan Yi,凉山,23,Sichuan,四川省,510000,513400,manual_supplement
+258,Guiyang,贵阳,24,Guizhou,贵州省,520000,520100,existing_codebook
+259,Liupanshui,六盘水,24,Guizhou,贵州省,520000,520200,existing_codebook
+260,Zunyi,遵义,24,Guizhou,贵州省,520000,520300,existing_codebook
+261,Anshun,安顺,24,Guizhou,贵州省,520000,520400,existing_codebook
+262,Bijie,毕节,24,Guizhou,贵州省,520000,520500,manual_supplement
+263,Tongren,铜仁,24,Guizhou,贵州省,520000,520600,manual_supplement
+264,Qiandongnan Miao and Dong,黔东南,24,Guizhou,贵州省,520000,522600,manual_supplement
+265,Qiannan Buyei and Miao,黔南,24,Guizhou,贵州省,520000,522700,manual_supplement
+266,Qianxinan Buyei and Miao,黔西南,24,Guizhou,贵州省,520000,522300,manual_supplement
+267,Yunnan,云南,25,Yunnan,云南省,530000,530000,manual_supplement
+268,Tibet,西藏,26,Xizang,西藏自治区,540000,540000,manual_supplement
+269,Xi'an,西安,27,Shaanxi,陕西省,610000,610100,existing_codebook
+270,Tongchuan,铜川,27,Shaanxi,陕西省,610000,610200,existing_codebook
+271,Baoji,宝鸡,27,Shaanxi,陕西省,610000,610300,existing_codebook
+272,Xianyang,咸阳,27,Shaanxi,陕西省,610000,610400,existing_codebook
+273,Weinan,渭南,27,Shaanxi,陕西省,610000,610500,existing_codebook
+274,Yan'an,延安,27,Shaanxi,陕西省,610000,610600,existing_codebook
+275,Hanzhong,汉中,27,Shaanxi,陕西省,610000,610700,existing_codebook
+276,Yulin,榆林,27,Shaanxi,陕西省,610000,610800,existing_codebook
+277,Ankang,安康,27,Shaanxi,陕西省,610000,610900,existing_codebook
+278,Shangluo,商洛,27,Shaanxi,陕西省,610000,611000,existing_codebook
+279,Lanzhou,兰州,28,Gansu,甘肃省,620000,620100,existing_codebook
+280,Jiayuguan,嘉峪关,28,Gansu,甘肃省,620000,620200,existing_codebook
+281,Jinchang,金昌,28,Gansu,甘肃省,620000,620300,existing_codebook
+282,Baiyin,白银,28,Gansu,甘肃省,620000,620400,existing_codebook
+283,Tianshui,天水,28,Gansu,甘肃省,620000,620500,existing_codebook
+284,Wuwei,武威,28,Gansu,甘肃省,620000,620600,existing_codebook
+285,Zhangye,张掖,28,Gansu,甘肃省,620000,620700,existing_codebook
+286,Pingliang,平凉,28,Gansu,甘肃省,620000,620800,existing_codebook
+287,Jiuquan,酒泉,28,Gansu,甘肃省,620000,620900,existing_codebook
+288,Qingyang,庆阳,28,Gansu,甘肃省,620000,621000,existing_codebook
+289,Dingxi,定西,28,Gansu,甘肃省,620000,621100,existing_codebook
+290,Longnan,陇南,28,Gansu,甘肃省,620000,621200,existing_codebook
+291,Linxia Hui,临夏,28,Gansu,甘肃省,620000,622900,manual_supplement
+292,Gannan Tibetan,甘南,28,Gansu,甘肃省,620000,623000,manual_supplement
+293,Qinghai,青海,29,Qinghai,青海省,630000,630000,manual_supplement
+294,Yinchuan,银川,30,Ningxia,宁夏回族自治区,640000,640100,existing_codebook
+295,Shizuishan,石嘴山,30,Ningxia,宁夏回族自治区,640000,640200,existing_codebook
+296,Wuzhong,吴忠,30,Ningxia,宁夏回族自治区,640000,640300,existing_codebook
+297,Zhongwei,中卫,30,Ningxia,宁夏回族自治区,640000,640500,existing_codebook
+298,Guyuan,固原,30,Ningxia,宁夏回族自治区,640000,640400,existing_codebook
+299,Urümqi,乌鲁木齐,31,Xinjiang,新疆维吾尔自治区,650000,650100,existing_codebook
+300,Karamay,克拉玛依,31,Xinjiang,新疆维吾尔自治区,650000,650200,existing_codebook
+301,Turfan,吐鲁番,31,Xinjiang,新疆维吾尔自治区,650000,650400,manual_supplement
+302,Hami,哈密,31,Xinjiang,新疆维吾尔自治区,650000,650500,manual_supplement
+303,Changji Hui,昌吉,31,Xinjiang,新疆维吾尔自治区,650000,652300,manual_supplement
+304,Ili Kazakh,伊犁,31,Xinjiang,新疆维吾尔自治区,654000,654000,manual_supplement
+305,Altay,阿勒泰,31,Xinjiang,新疆维吾尔自治区,654300,654300,manual_supplement
+306,B?rtala Mongol,博尔塔拉,31,Xinjiang,新疆维吾尔自治区,652700,652700,manual_supplement
+307,Bayin'gholin Mongol,巴音郭楞,31,Xinjiang,新疆维吾尔自治区,652800,652800,manual_supplement
+308,Aksu,阿克苏,31,Xinjiang,新疆维吾尔自治区,652900,652900,manual_supplement
+309,Kashgar,喀什,31,Xinjiang,新疆维吾尔自治区,653100,653100,manual_supplement
+310,Khotan,和田,31,Xinjiang,新疆维吾尔自治区,653200,653200,manual_supplement
+311,Shihezi,石河子,31,Xinjiang,新疆维吾尔自治区,659001,659001,manual_supplement
+312,Kizilsu Kirghiz,克孜,31,Xinjiang,新疆维吾尔自治区,653000,653000,manual_supplement
+313,Tacheng,塔城,31,Xinjiang,新疆维吾尔自治区,654200,654200,manual_supplement

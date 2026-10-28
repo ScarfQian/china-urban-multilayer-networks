@@ -1,0 +1,8 @@
+mode,metric,value
+strict,Z_inf,2.98023223876953e-08
+strict,Y_inf,2.98023223876953e-08
+strict,X_inf,314662.597864054
+strict,VA_inf,2.23517417907715e-08
+strict,IM_inf,2.98023223876953e-08
+strict,EX_inf,2.23517417907715e-08
+strict,error_inf,629325.195728094

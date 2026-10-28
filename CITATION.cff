@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this model code, please cite this repository and its data sources."
+type: software
+title: "China urban multilayer networks: model code"
+authors:
+  - name: "ScarfQian"
+version: "1.0.0"
+date-released: "2026-10-27"
+url: "https://github.com/ScarfQian/china-urban-multilayer-networks"
+repository-code: "https://github.com/ScarfQian/china-urban-multilayer-networks"
+license: MIT

@@ -1,0 +1,11 @@
+/Figure/
+/data/raw/
+/data/prepared/
+/data/reference/
+/results/generated/
+/results/diagnostics/
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
