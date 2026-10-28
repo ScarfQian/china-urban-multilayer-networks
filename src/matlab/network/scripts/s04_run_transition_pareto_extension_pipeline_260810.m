@@ -64,7 +64,7 @@ clear diaryCleanup;
 end
 
 function cfg = default_cfg_local(moduleRoot)
-% 中文说明: 配置固定为用户指定的正式两年、309 城市与 tau=0.10。
+% 使用 2015 和 2020 年的 309 个城市，统一削减比例 tau=0.10。
 cfg = struct();
 cfg.moduleRoot = string(moduleRoot);
 cfg.finalFreezeDir = study_path('data', 'reference');
@@ -92,7 +92,6 @@ cfg.strategies = ["carbon_hub", "production_hub", "investment_hub", ...
     "carbon_burden_low_control", "investment_carbon_exposure", "random"];
 cfg.technicalBenchmark = "carbon_economic_ratio";
 cfg.fileDatePrefix = "260810-";
-cfg.executor = "research_code";
 cfg.runTimestamp = string(datetime('now', ...
     'Format', 'yyyy-MM-dd HH:mm:ss'));
 end
@@ -129,12 +128,7 @@ model.modelsense = 'max';
 model.rhs = [];
 model.sense = '';
 params = struct('OutputFlag', 0);
-try
-    result = gurobi(model, params);
-catch ME
-    error('s04_transition_pareto:GurobiUnavailable', ...
-        'Gurobi API or license test failed: %s', ME.message);
-end
+result = gurobi(model, params);
 if ~strcmpi(string(result.status), "OPTIMAL")
     error('s04_transition_pareto:GurobiTestNotOptimal', ...
         'Gurobi test did not return OPTIMAL: %s', string(result.status));

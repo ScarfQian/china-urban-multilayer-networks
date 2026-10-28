@@ -21,7 +21,6 @@ writetable(randomIntervalSummary, fullfile(outDir, files.randomIntervals));
 
 manifest = struct();
 manifest.created_at = char(cfg.runTimestamp);
-manifest.executor = char(cfg.executor);
 manifest.module = 'transition_pareto_scope_completion_v2';
 manifest.module_root = char(cfg.moduleRoot);
 manifest.source_transition_directory = char(cfg.sourceTransitionDir);
@@ -147,9 +146,8 @@ if fid < 0
         'Cannot write run summary: %s', path);
 end
 cleanup = onCleanup(@() fclose(fid));
-fprintf(fid, '# 转型策略精确前沿第二轮完成模块运行摘要\n\n');
-fprintf(fid, '- 日期：2026-08-10\n');
-fprintf(fid, '- 执行者：%s\n', char(cfg.executor));
+fprintf(fid, '# 城市数量约束下的转型策略比较\n\n');
+fprintf(fid, '- 运行时间：%s\n', char(datetime('now', 'Format', 'yyyy-MM-dd HH:mm:ss')));
 fprintf(fid, '- 冻结输入：`%s`\n', manifest.source_transition_directory);
 fprintf(fid, '- v1 结果：`%s`\n', manifest.source_v1_directory);
 fprintf(fid, '- v2 输出：`%s`\n', manifest.output_directory);

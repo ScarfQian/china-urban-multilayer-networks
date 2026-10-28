@@ -183,11 +183,11 @@ def classify_replication(coefficients: pd.DataFrame) -> pd.DataFrame:
                 ).all()
             )
             if same_sign and ci_excludes_zero:
-                status = "stable_main_text_association"
+                status = "consistent_association"
             elif same_sign:
-                status = "replicated_direction_supplement_only"
+                status = "same_sign_uncertain"
             else:
-                status = "inconsistent_exclude_from_mechanism_claim"
+                status = "direction_not_replicated"
         rows.append(
             {
                 "model": model,
@@ -474,16 +474,13 @@ def write_audit(
     overall = all(passed for _, passed, _ in check_rows)
 
     lines = [
-        "# MRIO4 Urban-Structure Association Audit",
-        "",
-        "Date: 2026-08-26  ",
-        "Creator: **ScarfQian**",
+        "# Four-sector city-structure associations",
         "",
         "## Scientific scope",
         "",
         "The analysis uses city gross-output composition in the four formal MRIO4 sectors: Agriculture, Industry, Transport and Services. Outward carbon burden is decomposed by the accounting identity linking production-flow share and outward effective carbon intensity. Separate annual models examine associations with outward investment-network position, effective carbon intensity and investment-carbon-burden mismatch.",
         "",
-        "The models use standardized continuous variables, province fixed effects and HC1 heteroskedasticity-robust standard errors. Investment-network share enters in natural logs. Outward effective carbon intensity enters as log(1 + qbar divided by the annual positive-city median), which retains the zero-emission Shihezi observation in the 309-city sample. Services and Industry shares enter separate mismatch models because the four sector shares form a constrained composition. A relation enters the main-text mechanism only when its coefficient has the same sign and a 95% confidence interval excluding zero in both years. Same-sign relations with wider intervals remain supplementary; sign reversals are excluded from mechanism claims.",
+        "The models use standardized continuous variables, province fixed effects and HC1 heteroskedasticity-robust standard errors. Investment-network share enters in natural logs. Outward effective carbon intensity enters as log(1 + qbar divided by the annual positive-city median), retaining the zero-emission Shihezi observation. Services and Industry shares enter separate mismatch models because the four sector shares form a constrained composition. Cross-year comparisons summarize coefficient direction and whether the 95% intervals exclude zero.",
         "",
         "## Input files",
         "",
@@ -530,9 +527,9 @@ def write_audit(
 
     lines.extend(
         [
-            "## Cross-year coefficient decision",
+            "## Cross-year coefficient comparison",
             "",
-            "| Model | Predictor | 2015 coefficient | 2020 coefficient | Decision |",
+            "| Model | Predictor | 2015 coefficient | 2020 coefficient | Status |",
             "|---|---|---:|---:|---|",
         ]
     )
@@ -543,20 +540,13 @@ def write_audit(
         )
 
     stable = replication.loc[
-        replication["replication_status"] == "stable_main_text_association"
+        replication["replication_status"] == "consistent_association"
     ]
-    lines.extend(["", "## Main-text decision", ""])
-    if stable.empty:
-        lines.append(
-            "No structural coefficient meets the predeclared two-year main-text rule. The revised mainline will retain the exact production-scale and effective-carbon-intensity decomposition and move the four-sector associations to the Supplementary Information."
-        )
-    else:
-        stable_items = [f"{row.model}: {row.predictor}" for row in stable.itertuples(index=False)]
-        lines.append(
-            "The following relations meet the predeclared two-year rule and can support the main-text structural interpretation: "
-            + "; ".join(stable_items)
-            + "."
-        )
+    lines.extend(
+        ["", "## Associations across both years", "",
+         f"{len(stable)} model–predictor pairs have the same coefficient sign "
+         "and 95% intervals excluding zero in both years."]
+    )
 
     lines.extend(
         [
@@ -573,7 +563,7 @@ def write_audit(
             "",
             "## Verdict",
             "",
-            f"**{'PASS' if overall else 'FAIL'}.** The MRIO4 variables and association results {'are' if overall else 'are not'} valid for the stated evidence decision.",
+            f"**{'PASS' if overall else 'FAIL'}.** The sample, sector shares and flow identities {'agree' if overall else 'do not agree'} with the stated definitions.",
         ]
     )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")

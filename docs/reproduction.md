@@ -40,6 +40,8 @@ The final MRQAP analysis uses 4,999 permutations; the separate 200-permutation c
 
 For the city-structure analysis, the model specifications, within-year transformations, province effects and 27-cluster inference follow the original analysis functions. These are associations with output and sector composition.
 
+Cross-year status labels describe coefficient direction and uncertainty: `consistent_association` means the same sign and intervals excluding zero in both years; `same_sign_uncertain` means the same sign with at least one interval including zero; `direction_not_replicated` covers the remaining direction patterns.
+
 ## Numerical checks
 
 Run `python scripts/verify_results.py` after all model groups. A single group can be checked with `--group network`, `--group targeting` or `--group python`. The reference tables contain scientific results and selected city identifiers; raw input matrices and inventories are not distributed.

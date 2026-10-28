@@ -119,13 +119,9 @@ score = nan(N, 1);
 if ~doCompute
     return;
 end
-try
-    dg = digraph(W);
-    cost = 1 ./ max(dg.Edges.Weight, eps);
-    score = centrality(dg, 'betweenness', 'Cost', cost);
-catch
-    score(:) = NaN;
-end
+dg = digraph(W);
+cost = 1 ./ max(dg.Edges.Weight, eps);
+score = centrality(dg, 'betweenness', 'Cost', cost);
 end
 
 function r = rank_desc_local(x)

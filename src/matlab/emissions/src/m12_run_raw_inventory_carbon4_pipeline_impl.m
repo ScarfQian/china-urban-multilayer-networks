@@ -121,7 +121,6 @@ end
 function write_manifest_local(cfg, manifestPath, direct2015Path, direct2020Path, allocated2015Path, allocated2020Path, coveragePath, proxyFallbackPath)
 manifest = struct();
 manifest.generated_at = char(datetime('now', 'Format', 'yyyy-MM-dd HH:mm:ss'));
-manifest.executor = 'codex';
 manifest.package = 'carbon_matching_4';
 manifest.boundary = 'raw inventory aggregate fields mapped directly to MRIO4 sectors';
 manifest.inputs = struct('raw2015', char(cfg.raw2015Path), 'raw2020', char(cfg.raw2020Path), ...
@@ -140,9 +139,8 @@ function write_readme_local(cfg, readmePath)
 ensure_dir_local(fileparts(readmePath));
 fid = fopen(readmePath, 'w');
 fprintf(fid, '# MRIO4 carbon matching package\n\n');
-fprintf(fid, '- Date: 2026-04-27\n');
-fprintf(fid, '- Executor: Codex\n');
-fprintf(fid, '- Scope: copied 4-sector branch only. Accepted MGRAS outputs are frozen inputs.\n\n');
+fprintf(fid, '- Run time: %s\n', char(datetime('now', 'Format', 'yyyy-MM-dd HH:mm:ss')));
+fprintf(fid, '- Scope: production-side direct emissions matched to the four-sector city MRIO tables.\n\n');
 fprintf(fid, '## Sector rule\n\n');
 fprintf(fid, 'The final production-side direct-emission package uses raw inventory aggregate columns directly: agriculture, industrial_total, transport_total, and service. Industrial subcomponents and transport submodes are diagnostic only in this branch.\n\n');
 fprintf(fid, '## Zero-fill rule\n\n');

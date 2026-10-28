@@ -107,7 +107,6 @@ cfg.strategies = ["carbon_hub", "production_hub", "investment_hub", ...
     "investment_carbon_exposure", "random"];
 cfg.technicalBenchmark = "carbon_economic_ratio";
 cfg.fileDatePrefix = "260810-";
-cfg.executor = "research_code";
 cfg.runTimestamp = string(datetime('now', ...
     'Format', 'yyyy-MM-dd HH:mm:ss'));
 end
@@ -148,12 +147,7 @@ model.vtype = 'B';
 model.modelsense = 'max';
 model.rhs = [];
 model.sense = '';
-try
-    result = gurobi(model, struct('OutputFlag', 0));
-catch ME
-    error('s05_transition_pareto_v2:GurobiUnavailable', ...
-        'Gurobi API or license test failed: %s', ME.message);
-end
+result = gurobi(model, struct('OutputFlag', 0));
 if ~strcmpi(string(result.status), "OPTIMAL")
     error('s05_transition_pareto_v2:GurobiTestFailed', ...
         'Gurobi test status is %s.', string(result.status));

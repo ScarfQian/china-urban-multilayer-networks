@@ -220,8 +220,7 @@ if fid < 0
 end
 cleanupObj = onCleanup(@() fclose(fid));
 fprintf(fid, '# Transition extension audit report\n\n');
-fprintf(fid, '- Date: 2026-04-27\n');
-fprintf(fid, '- Author: Codex\n');
+fprintf(fid, '- Run time: %s\n', char(datetime('now', 'Format', 'yyyy-MM-dd HH:mm:ss')));
 fprintf(fid, '- Source revised results: `%s`\n', inputs.sourceResultsDir);
 fprintf(fid, '- Output directory: `%s`\n', cfg.outputDir);
 fprintf(fid, '- Expected sample: `%s`, n=%d\n\n', cfg.sampleMode, cfg.expectedCities);
@@ -245,11 +244,7 @@ data.audit_status = char(status);
 D = dir(outputDir);
 D = D(~[D.isdir]);
 data.files_created = cellstr(sort(string({D.name})'));
-try
-    txt = jsonencode(data, 'PrettyPrint', true);
-catch
-    txt = jsonencode(data);
-end
+txt = jsonencode(data, 'PrettyPrint', true);
 fid = fopen(manifestPath, 'w');
 cleanupObj = onCleanup(@() fclose(fid));
 fprintf(fid, '%s\n', txt);

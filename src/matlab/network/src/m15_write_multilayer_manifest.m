@@ -1,7 +1,6 @@
 function out = m15_write_multilayer_manifest(runState, cfg)
 % M15_WRITE_MULTILAYER_MANIFEST
-% Write one machine-readable revised-results manifest and one concise run
-%   summary for the publication-ready multilayer-network output surface.
+% Record network inputs, parameters and result-file locations.
 
 manifestPath = fullfile(cfg.resultsDir, 'multilayer_results_manifest.json');
 summaryPath = fullfile(cfg.resultsDir, 'multilayer_pipeline_run_summary.md');
@@ -87,11 +86,7 @@ manifest.notes = { ...
     'Efficiency retention is an auxiliary diagnostic.'};
 
 fid = fopen(manifestPath, 'w');
-try
-    payload = jsonencode(manifest, 'PrettyPrint', true);
-catch
-    payload = jsonencode(manifest);
-end
+payload = jsonencode(manifest, 'PrettyPrint', true);
 fprintf(fid, '%s\n', payload);
 fclose(fid);
 
@@ -127,10 +122,9 @@ fprintf(fid, '- paper QAP table: `%s`\n', runState.paperTables.tableQapPath);
 fprintf(fid, '- paper resilience table: `%s`\n\n', runState.paperTables.tableResiliencePath);
 
 fprintf(fid, '## Notes\n');
-fprintf(fid, '- The revised run keeps the original smoke-test outputs untouched under Results/.\n');
 fprintf(fid, '- Community labels are selected from a variant + gamma sweep and documented in community_summary_by_variant.csv.\n');
 fprintf(fid, '- Transition stress test reduces outgoing production flows of targeted source cities and does not remove nodes.\n');
-fprintf(fid, '- Efficiency retention remains diagnostic-only until a publication-safe denominator is fixed.\n');
+fprintf(fid, '- Efficiency retention is an auxiliary diagnostic.\n');
 fclose(fid);
 
 out = struct();

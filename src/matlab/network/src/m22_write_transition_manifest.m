@@ -49,11 +49,7 @@ files = cellstr(names);
 end
 
 function write_json_local(pathValue, data)
-try
-    txt = jsonencode(data, 'PrettyPrint', true);
-catch
-    txt = jsonencode(data);
-end
+txt = jsonencode(data, 'PrettyPrint', true);
 fid = fopen(pathValue, 'w');
 if fid < 0
     error('m22_write_transition_manifest:WriteFailed', 'Cannot write %s.', pathValue);
@@ -70,8 +66,7 @@ if fid < 0
 end
 cleanupObj = onCleanup(@() fclose(fid));
 fprintf(fid, '# Low-carbon transition extension run summary\n\n');
-fprintf(fid, '- Date: 2026-04-27\n');
-fprintf(fid, '- Author: Codex\n');
+fprintf(fid, '- Run time: %s\n', char(datetime('now', 'Format', 'yyyy-MM-dd HH:mm:ss')));
 fprintf(fid, '- Source revised results: `%s`\n', inputs.sourceResultsDir);
 fprintf(fid, '- Output directory: `%s`\n', cfg.outputDir);
 fprintf(fid, '- Sample mode: `%s`, retained cities: %d\n\n', cfg.sampleMode, cfg.expectedCities);

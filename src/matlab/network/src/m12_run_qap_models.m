@@ -1,7 +1,7 @@
 function out = m12_run_qap_models(layerBundle, alignment, yearValue, cfg)
 % M12_RUN_QAP_MODELS
 % Estimate QAP-style matrix regressions for capital-production and
-%   production-carbon coupling with both smoke-test and final permutation runs.
+%   production-carbon coupling with diagnostic and final permutation runs.
 
 N = alignment.numCities;
 mask = ~eye(N);

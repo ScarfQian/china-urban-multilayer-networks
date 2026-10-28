@@ -228,11 +228,11 @@ def classify_replication(coefficients: pd.DataFrame) -> pd.DataFrame:
         same_sign = bool(signs[0] == signs[1] and signs[0] != 0)
         both_exclude_zero = bool(block["cluster_ci_excludes_zero"].all())
         if same_sign and both_exclude_zero:
-            status = "stable_main_text_association"
+            status = "consistent_association"
         elif same_sign:
-            status = "same_signed_cluster_uncertain"
+            status = "same_sign_uncertain"
         else:
-            status = "sign_reversal_exclude_from_mechanism_claim"
+            status = "direction_not_replicated"
         rows.append(
             {
                 "model": model,
@@ -312,10 +312,7 @@ def write_audit(
     overall = coefficient_pass and hc1_pass and dimension_pass and finite_pass
 
     lines = [
-        "# Province-Clustered Urban-Structure Inference Audit",
-        "",
-        "Date: 2026-08-27  ",
-        "Creator: **ScarfQian**",
+        "# Province-clustered city-structure inference",
         "",
         "## Scope",
         "",
@@ -362,9 +359,7 @@ def write_audit(
             "## Verdict",
             "",
             f"**{'PASS' if overall else 'FAIL'}.** "
-            "The clustered results are valid for manuscript and figure revision."
-            if overall
-            else "**FAIL.** Downstream manuscript and figure revision must stop.",
+            f"The coefficient, covariance and sample-size checks {'passed' if overall else 'failed'}.",
         ]
     )
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
