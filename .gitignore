@@ -2,8 +2,9 @@
 /data/raw/
 /data/prepared/
 /data/reference/
-/results/generated/
-/results/diagnostics/
+/data/metadata/2017_y_hybrid_0422/validation_*.csv
+/data/metadata/2017_y_hybrid_0422/aggregation_*.csv
+/results/
 .venv/
 __pycache__/
 *.py[cod]

@@ -44,7 +44,13 @@ Cross-year status labels describe coefficient direction and uncertainty: `consis
 
 ## Numerical checks
 
-Run `python scripts/verify_results.py` after all model groups. A single group can be checked with `--group network`, `--group targeting` or `--group python`. The reference tables contain scientific results and selected city identifiers; raw input matrices and inventories are not distributed.
+Reference tables are kept separately from this code repository. After all model groups, supply the local reference directory explicitly:
+
+```bash
+python scripts/verify_results.py --reference-root /path/to/local/reference_tables
+```
+
+A single group can be checked with `--group network`, `--group targeting` or `--group python`. Use `--output-root` to check a different local output directory. The reference tables contain scientific results and selected city identifiers; they are not downloaded by the verification script.
 
 The comparison checks scientific values and labels and excludes elapsed time and solver workload. The default absolute tolerances are 1e-10 for network/statistical quantities and 1e-8 for frontier and attainment tables, matching the existing numerical checks. City-set comparisons include city identifiers, rather than relying only on objective values.
 

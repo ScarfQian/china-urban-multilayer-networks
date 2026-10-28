@@ -30,8 +30,8 @@ cfg.prov2017 = study_path('raw', 'province_mrio_2017.xlsx');
 cfg.prov2020 = study_path('raw', 'province_mrio_2020.xlsx');
 cfg.mapping = study_path('metadata', 'city2pro.xlsx');
 cfg.acceptedHybridDir = study_path('metadata', '2017_y_hybrid_0422');
-cfg.acceptedHybridValidation = fullfile(cfg.acceptedHybridDir, 'validation_backcast_2017_y_hybrid.csv');
-cfg.acceptedHybridAggregation = fullfile(cfg.acceptedHybridDir, 'aggregation_check_2017_y_hybrid.csv');
+cfg.acceptedHybridValidation = study_path('data', 'reference', 'mrio_2017', 'validation_backcast_2017_y_hybrid.csv');
+cfg.acceptedHybridAggregation = study_path('data', 'reference', 'mrio_2017', 'aggregation_check_2017_y_hybrid.csv');
 cfg.acceptedHybridParams = fullfile(cfg.acceptedHybridDir, 'y_hybrid_best_params.csv');
 % The accepted hybrid parameter table also contains the fixed beta and gamma.
 cfg.acceptedFactorizedParams = cfg.acceptedHybridParams;

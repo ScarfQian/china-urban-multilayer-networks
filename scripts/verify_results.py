@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare recomputed model outputs with the study's reference numerical tables."""
+"""Compare recomputed outputs with reference numerical tables held locally."""
 from __future__ import annotations
 
 import argparse
@@ -75,6 +75,10 @@ def compare(reference: Path, generated: Path) -> tuple[int, float]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--reference-root", type=Path, required=True,
+        help="Local directory containing the study's reference numerical tables.",
+    )
     parser.add_argument("--group", choices=("all", "network", "targeting", "python"), default="all")
     parser.add_argument("--output-root", type=Path, default=study_path("generated"))
     args = parser.parse_args()
@@ -85,7 +89,7 @@ def main() -> None:
         output = args.output_root / relative
         if not output.is_file():
             raise FileNotFoundError(f"Run the {group} stages first: {output}")
-        rows, difference = compare(ROOT / "results" / "expected" / name, output)
+        rows, difference = compare(args.reference_root / name, output)
         print(f"{name}: {rows} rows agree; maximum absolute difference {difference:.3g}")
         checked += 1
     print(f"VERIFIED_TABLES={checked}")
