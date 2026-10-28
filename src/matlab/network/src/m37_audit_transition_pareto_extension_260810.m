@@ -248,7 +248,6 @@ end
 cleanup = onCleanup(@() fclose(fid));
 fprintf(fid, '# 转型策略精确约束前沿与效率缺口审计报告\n\n');
 fprintf(fid, '- 运行时间：%s\n', char(cfg.runTimestamp));
-fprintf(fid, '- 执行者：%s\n', char(cfg.executor));
 fprintf(fid, '- 冻结输入：`%s`\n', char(cfg.sourceTransitionDir));
 fprintf(fid, '- 独立输出：`%s`\n', char(cfg.outputDir));
 fprintf(fid, '- 求解器：Gurobi MATLAB API\n\n');

@@ -44,7 +44,6 @@ end
 
 manifest = struct();
 manifest.created_at = char(cfg.runTimestamp);
-manifest.executor = char(cfg.executor);
 manifest.module = 'transition_strategy_exact_frontier_and_efficiency_gap';
 manifest.module_root = char(cfg.moduleRoot);
 manifest.source_transition_directory = char(cfg.sourceTransitionDir);
@@ -118,7 +117,6 @@ cleanup = onCleanup(@() fclose(fid));
 
 fprintf(fid, '# 转型策略精确约束前沿与效率缺口运行摘要\n\n');
 fprintf(fid, '- 运行时间：%s\n', char(cfg.runTimestamp));
-fprintf(fid, '- 执行者：%s\n', char(cfg.executor));
 fprintf(fid, '- 冻结输入：`%s`\n', manifest.source_transition_directory);
 fprintf(fid, '- 独立输出：`%s`\n', manifest.output_directory);
 fprintf(fid, '- MATLAB：`%s`\n', manifest.matlab_version);

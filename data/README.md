@@ -1,6 +1,6 @@
 # Input data
 
-Raw and prepared numerical inputs are read from this directory. They are excluded from Git tracking. Only study metadata and reference numerical summaries are distributed with the code.
+Raw and prepared numerical inputs are read from this directory. They are excluded from Git tracking. Only city and sector concordances and the fixed model parameters are distributed with the code.
 
 ## Original sources
 
@@ -30,7 +30,15 @@ Keep the original values and workbook structure. Copy or rename the downloaded f
 
 The investment workbook is also needed when prepared MRIO and emissions inputs are supplied.
 
-Run `run_models('all')` after preparing these files. MRIO reconstruction, sector consolidation and emissions matching can also be run separately. The accepted calibration parameters and their validation summaries are included in `metadata/2017_y_hybrid_0422/`; they are used without refitting. The two additional comparison reports named in `m25` are optional: their absence produces missing entries in auxiliary comparison columns, rather than changing the accepted parameters.
+The fixed calibration parameters in `metadata/2017_y_hybrid_0422/` are used without refitting. MRIO deployment compares the reconstructed 2017 tables with two separately held reference reports. Place local copies at:
+
+```text
+reference/mrio_2017/
+  validation_backcast_2017_y_hybrid.csv
+  aggregation_check_2017_y_hybrid.csv
+```
+
+These reference reports are excluded from Git tracking. Run `run_models('all')` after preparing the raw inputs and local reference reports. MRIO reconstruction, sector consolidation and emissions matching can also be run separately. The additional `factorized_validation.csv` and `baseline_validation.csv` comparison reports can be placed in the same reference directory; their absence produces missing entries in auxiliary comparison columns, rather than changing the fixed parameters.
 
 ## Prepared-input route
 

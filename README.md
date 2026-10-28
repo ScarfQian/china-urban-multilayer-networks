@@ -15,7 +15,6 @@ src/matlab/network/    Networks, city roles, targeting and node removal
 src/python/        Carbon reweighting and city-structure analyses
 scripts/           Model execution entry points
 data/              Input instructions and study metadata
-results/expected/  Reference numerical summaries
 docs/              Reproduction details and code provenance
 ```
 
@@ -80,11 +79,11 @@ python scripts/run_analysis.py
 
 The optional arguments `carbon`, `structure` and `inference` select one Python stage. They calculate carbon reweighting, city-structure models and province-clustered inference, respectively.
 
-Outputs are written under the configured output directory. The selection stages require a new, empty output subdirectory; they do not overwrite an existing frontier run. To repeat a complete run, select a new output directory in `paths.json`.
+Outputs are written under the configured output directory and remain local. Result files, reference tables and generated reports are excluded from this repository. The selection stages require a new, empty output subdirectory; they do not overwrite an existing frontier run. To repeat a complete run, select a new output directory in `paths.json`.
 
 ## Reproduction and interpretation
 
-[docs/reproduction.md](docs/reproduction.md) connects model stages to their inputs, outputs and reference results. [docs/source-map.csv](docs/source-map.csv) records the source of the study code.
+[docs/reproduction.md](docs/reproduction.md) connects model stages to their inputs and outputs and explains how to compare them with separately held local reference tables. [docs/source-map.csv](docs/source-map.csv) records the source of the study code.
 
 The selection experiments retain the study's common attenuation proportion and distinguish unrestricted and city-count-constrained comparisons. Production-flow losses are changes in intermediate monetary flows. City-structure models estimate associations, and city removal measures the concentration of flows across networks.
 

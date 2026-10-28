@@ -142,8 +142,7 @@ if fid < 0
 end
 cleanupObj = onCleanup(@() fclose(fid));
 fprintf(fid, '# Multilayer extension audit report\n\n');
-fprintf(fid, '- Date: 2026-04-27\n');
-fprintf(fid, '- Author: Codex\n');
+fprintf(fid, '- Run time: %s\n', char(datetime('now', 'Format', 'yyyy-MM-dd HH:mm:ss')));
 fprintf(fid, '- Source revised results: `%s`\n', cfg.sourceResultsDir);
 fprintf(fid, '- Transition source results: `%s`\n', cfg.transitionResultsDir);
 fprintf(fid, '- Output directory: `%s`\n', cfg.outputDir);
@@ -174,11 +173,7 @@ manifest.modules = {'edge_multiplexity_overlap','cross_layer_conditional_lift','
     'supra_centrality_versatility','community_alignment','cross_layer_vulnerability','transition_strategy_matrix'};
 manifest.required_files = cellstr(requiredFiles(:));
 manifest.audit_status = char(status);
-try
-    txt = jsonencode(manifest, 'PrettyPrint', true);
-catch
-    txt = jsonencode(manifest);
-end
+txt = jsonencode(manifest, 'PrettyPrint', true);
 fid = fopen(pathValue, 'w');
 if fid < 0
     error('m30_audit_multilayer_extension:WriteFailed', 'Cannot write %s.', pathValue);

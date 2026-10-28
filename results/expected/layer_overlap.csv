@@ -1,7 +1,0 @@
-year,layer_a_code,layer_b_code,layer_a,layer_b,jaccard_overlap,weighted_overlap_layer_normalized
-2015,I,E,investment,production,0.30338058658484,0.40302565154307
-2015,I,C,investment,carbon,0.303184149822518,0.283420838731576
-2015,E,C,production,carbon,0.996762971760082,0.649115076368782
-2020,I,E,investment,production,0.455900895221284,0.462544297401027
-2020,I,C,investment,carbon,0.455524556508922,0.283932994670683
-2020,E,C,production,carbon,0.996763754045307,0.60422531566555
